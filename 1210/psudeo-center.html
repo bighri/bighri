@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 400px;
+            background-color: #bbb;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+            padding-left: 30px;
+            padding-right: 60px;
+        }
+        .box::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        .box .content {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <h3>asdfsadf</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consectetur a nesciunt corrupti asperiores aspernatur consequatur eius minima, iusto ad hic perferendis corporis accusamus libero praesentium, excepturi molestiae omnis ut.
+            </p>
+            <a href="#">more</a>
+        </div>
+    </div>
+</body>
+</html>
